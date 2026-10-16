@@ -1,0 +1,6 @@
+{
+  "name": "Marina Valérielle — Luxury Yacht Charters",
+  "description": "Exclusive private yacht charters, bespoke island escapes, and luxury marine experiences in crystal turquoise waters.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
