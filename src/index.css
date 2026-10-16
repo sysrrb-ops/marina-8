@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Prompt", system-ui, sans-serif;
+  --color-midnight: #152740;
+  --color-harbor: #134C65;
+  --color-seafoam: #487F86;
+  --color-driftwood: #F0ECDA;
+  --color-navy: #102D4F;
+  --color-ocean: #D8F0F5;
+  --color-gold: #B69A5A;
+  --color-gold-light: #DFCD98;
+}
+
+/* Custom smooth scroll and luxury subtle transitions */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #F0ECDA;
+}
+
+body {
+  background-color: #F0ECDA;
+}
+
+.font-serif-luxury {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.font-sans-body {
+  font-family: "Plus Jakarta Sans", "Prompt", sans-serif;
+}
+
+/* Distinctive Luxury Price Font (Cinzel Classical Roman Numeral Elegance) */
+.font-price {
+  font-family: "Cinzel", "Cormorant Garamond", Georgia, serif;
+  font-feature-settings: "tnum" 1;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+/* Nautical Boat Sailing & Fish Swimming Animations */
+@keyframes sailDrift {
+  0% {
+    transform: translateX(-40px) translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateX(15px) translateY(-5px) rotate(0.8deg);
+  }
+  50% {
+    transform: translateX(70px) translateY(2px) rotate(-0.5deg);
+  }
+  75% {
+    transform: translateX(25px) translateY(-4px) rotate(0.6deg);
+  }
+  100% {
+    transform: translateX(-40px) translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes fishSchoolSwim {
+  0% {
+    transform: translateX(-120%) translateY(0px) scale(0.9);
+  }
+  50% {
+    transform: translateX(50vw) translateY(-14px) scale(1);
+  }
+  100% {
+    transform: translateX(110vw) translateY(5px) scale(0.9);
+  }
+}
+
+@keyframes fishSchoolSwimReverse {
+  0% {
+    transform: translateX(110vw) translateY(0px) scaleX(-1) scale(0.75);
+  }
+  50% {
+    transform: translateX(40vw) translateY(12px) scaleX(-1) scale(0.8);
+  }
+  100% {
+    transform: translateX(-120%) translateY(-6px) scaleX(-1) scale(0.75);
+  }
+}
+
+@keyframes gentleWaveBob {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(1.2deg);
+  }
+}
+
+@keyframes tailFinWiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(18deg);
+  }
+}
+
+.animate-sail-drift {
+  animation: sailDrift 28s ease-in-out infinite;
+}
+
+.animate-fish-swim {
+  animation: fishSchoolSwim 36s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-fish-reverse {
+  animation: fishSchoolSwimReverse 42s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation-delay: 8s;
+}
+
+.animate-wave-bob {
+  animation: gentleWaveBob 4.5s ease-in-out infinite;
+}
+
+.animate-tail-wiggle {
+  animation: tailFinWiggle 1.4s ease-in-out infinite;
+  transform-origin: 30% 50%;
+}
+
+/* Subtle luxury grain / backdrop filters */
+.backdrop-blur-glass {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
